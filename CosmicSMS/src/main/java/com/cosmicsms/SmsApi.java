@@ -36,13 +36,13 @@ public class SmsApi {
 
 		try {
 
-			// Create Authentication Cache instance
+			// Create Basic authentication token
 			AuthCache authCache = new BasicAuthCache();
 			// Generate BASIC scheme object and add it to the local auth cache
 			BasicScheme basicAuth = new BasicScheme();
 			authCache.put(target, basicAuth);
 
-			// Add AuthCache to the execution context
+			// Add the auth token to the request context
 			HttpClientContext localContext = HttpClientContext.create();
 			localContext.setAuthCache(authCache);
 
