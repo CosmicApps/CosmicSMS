@@ -1,7 +1,7 @@
 # CosmicSMS
-This repo includes code snippets for sending SMS messages using a REST API.
+**CosmicSMS** repo includes code snippets for sending SMS messages using a REST API.
 
-The **CosmicSMS** repo demonstrates a simple Java API example using Apache HTTPClient library.
+The code snippets demonstrate a simple Java API request using Apache HTTPClient library.
 Basic Authorization header is included for authenticating the username and API password.
 pom.xml - includes a Maven dependency for v4.5.7 of the Apache HTTPClient library
 
@@ -11,7 +11,7 @@ pom.xml - includes a Maven dependency for v4.5.7 of the Apache HTTPClient librar
 3. Clone the repo and compile the project
 4. Call the Java main method passing in username, API password, and your mobile number (international format, e.g. 447712345670)
 
-> # java SmsApi <USERNAME> <APIPASSWORD> <TARGET>
+> java SmsApi USERNAME APIPASSWORD TARGET
 
 ## Useful links -
 - Cosmic developer page - https://www.cosmicsms.com/developers
