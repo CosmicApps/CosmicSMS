@@ -8,9 +8,9 @@ pom.xml - includes a Maven dependency for the Apache HTTPClient library
 
 ### Authentication
 All Web API requests must be authenticated using Basic Access authentication. The account username and API password are concatenated with a colon ‘:’ separator to produce an authentication string. For example, if your user name is ‘Geoffrey’ and your password is ‘AbC123DeF456’, then your authentication string is: Geoffrey:AbC123DeF456
-<br/>The authentication string is required to be Base64 encoded. Online tools are available to help, one example can be found at https://www.base64encode.org/. The encoded authentication string is then added to the HTTP header for all API requests. 
-<br/>The example HTTP header below shows the encoded authentication string:
-<br/>
+<br/><br/>The authentication string is required to be Base64 encoded. Online tools are available to help, one example can be found at https://www.base64encode.org/. The encoded authentication string is then added to the HTTP header for all API requests. 
+<br/><br/>The example HTTP header below shows the encoded authentication string:
+<br/><br/>
 POST * HTTP/1.1
 <br/>From: www.myserver.co.uk
 <br/>Host: api.cosmicsms.com
