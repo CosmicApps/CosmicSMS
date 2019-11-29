@@ -4,7 +4,20 @@
 
 The code snippets demonstrate a simple Java API request using Apache HTTPClient library.
 Basic Authorization header is included for authenticating the username and API password.
-pom.xml - includes a Maven dependency for v4.5.7 of the Apache HTTPClient library
+pom.xml - includes a Maven dependency for the Apache HTTPClient library
+
+### Authentication
+All Web API requests must be authenticated using Basic Access authentication. The account username and API password are concatenated with a colon ‘:’ separator to produce an authentication string. For example, if your user name is ‘Geoffrey’ and your password is ‘AbC123DeF456’, then your authentication string is: Geoffrey:AbC123DeF456
+The authentication string is required to be Base64 encoded. Online tools are available to help, one example can be found at https://www.base64encode.org/. The encoded authentication string is then added to the HTTP header for all API requests. 
+The example HTTP header below shows the encoded authentication string:
+
+POST * HTTP/1.1
+From: www.myserver.co.uk
+Host: api.cosmicsms.com
+Authorization: Basic R2VvZmZyZXk6QWJDMTIzRGVGNDU2
+Content-Type: application/xml
+Content-Length: 247
+
 
 ### Steps for running the SMS API
 1. Sign up to Cosmic SMS to set username and get a few free credits.
